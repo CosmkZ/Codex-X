@@ -18,6 +18,10 @@ pub(crate) const INSTRUCTION_SEAGULL_FILENAME: &str = "海鸥3.0破甲.md";
 pub(crate) const INSTRUCTION_SEAGULL_CONTENT: &str =
     include_str!("../../../../examples/海鸥3.0破甲.md");
 
+pub(crate) const INSTRUCTION_PURGE_FILENAME: &str = "dsh-purge-0.2.1.md";
+pub(crate) const INSTRUCTION_PURGE_CONTENT: &str =
+    include_str!("../../../../examples/dsh-purge-0.2.1.md");
+
 pub(crate) const AGENTS_FILENAME: &str = "AGENTS.md";
 pub(crate) const AGENTS_MANAGED_BEGIN: &str = "<!-- CODEX-X:INSTRUCTIONS:BEGIN -->";
 pub(crate) const AGENTS_MANAGED_END: &str = "<!-- CODEX-X:INSTRUCTIONS:END -->";

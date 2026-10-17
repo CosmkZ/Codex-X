@@ -124,6 +124,13 @@ const bundledInstructionTemplates: InstructionTemplate[] = [
     subtitle: "测试生效：海鸥在线，你要整点薯条吗？",
     badge: "内置",
   },
+  {
+    id: "dsh-purge-0.2.1",
+    filename: "dsh-purge-0.2.1.md",
+    title: "dsh-purge 0.2.1 破甲（Codex 移植）",
+    subtitle: "25 KB 注入稿：身份 + 拒答对抗 + 22 类安全作业规则",
+    badge: "内置",
+  },
 ];
 
 const defaultProviderForm: SavedProvider = {

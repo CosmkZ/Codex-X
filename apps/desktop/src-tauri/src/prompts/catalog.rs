@@ -9,7 +9,8 @@ use crate::constants::{
     GITHUB_EXAMPLES_API, GITHUB_EXAMPLES_BASE, INSTRUCTION_54_CONTENT, INSTRUCTION_54_FILENAME,
     INSTRUCTION_56_SOL_CONTENT, INSTRUCTION_56_SOL_FILENAME, INSTRUCTION_CONTENT,
     INSTRUCTION_FILENAME, INSTRUCTION_JELI_CONTENT, INSTRUCTION_JELI_FILENAME,
-    INSTRUCTION_SEAGULL_CONTENT, INSTRUCTION_SEAGULL_FILENAME, JSDELIVR_EXAMPLES_API,
+    INSTRUCTION_PURGE_CONTENT, INSTRUCTION_PURGE_FILENAME, INSTRUCTION_SEAGULL_CONTENT,
+    INSTRUCTION_SEAGULL_FILENAME, JSDELIVR_EXAMPLES_API,
     JSDELIVR_EXAMPLES_BASE,
 };
 use crate::error::{CodexxError, Result};
@@ -63,7 +64,7 @@ impl PromptContentTrust<'_> {
     }
 }
 
-pub(crate) fn bundled_prompt_metas() -> [BundledPromptMeta; 5] {
+pub(crate) fn bundled_prompt_metas() -> [BundledPromptMeta; 6] {
     [
         BundledPromptMeta {
             id: "gpt5.5-unrestricted",
@@ -105,6 +106,14 @@ pub(crate) fn bundled_prompt_metas() -> [BundledPromptMeta; 5] {
             subtitle: "测试生效：海鸥在线，你要整点薯条吗？",
             badge: "内置",
             content: INSTRUCTION_SEAGULL_CONTENT,
+        },
+        BundledPromptMeta {
+            id: "dsh-purge-0.2.1",
+            filename: INSTRUCTION_PURGE_FILENAME,
+            title: "dsh-purge 0.2.1 破甲（Codex 移植）",
+            subtitle: "25 KB 注入稿：身份 + 拒答对抗 + 22 类安全作业规则",
+            badge: "内置",
+            content: INSTRUCTION_PURGE_CONTENT,
         },
     ]
 }
